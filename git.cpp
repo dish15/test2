@@ -40,12 +40,12 @@ int main()
 begin:
 	char add[50] = "git add ";
 	char branch[50] = "git checkout ";
-	char newbranch[50] = "git branch  ";
+	char newbranch[50] = "git branch ";
 	char init[] = "git init";
 	char status[] = "git status";
 	char buffin[50];
 	char commit[] = "git commit -m ";
-	char push[50] = "git push j ";
+	char push[50] = "git push test ";
 	char merge[50] = "git merge ";
 	char buff[50];
 	system("cls");
