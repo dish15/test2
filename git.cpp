@@ -7,7 +7,7 @@
 #define ENTER 13
 using namespace std;
 
-const int size1 = 10;
+const int size1 = 11;
 string menuarr[size1] = {
 	"Створити репозиторій",
 	"Додати до репозиторія",
@@ -18,7 +18,8 @@ string menuarr[size1] = {
 	"push",
 	"pull",
 	"Вивести всі гілки",
-	"Злиття"
+	"Злиття",
+	"log"
 };
 
 void menuout(int index) {
@@ -45,7 +46,7 @@ begin:
 	char status[] = "git status";
 	char buffin[50];
 	char commit[] = "git commit -m ";
-	char push[50] = "git push test ";
+	char push[50] = "git push all ";
 	char merge[50] = "git merge ";
 	char buff[50];
 	system("cls");
@@ -127,6 +128,9 @@ begin:
 		strcpy_s(buff, merge);
 		strcat_s(buff, buffin);
 		system(buff);
+		break;
+	case 10:
+		system("git log");
 		break;
 	}
 
