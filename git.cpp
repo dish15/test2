@@ -105,7 +105,7 @@ begin:
 		system(buff);
 		break;
 	case 6:
-		system("git push");
+		system("git push test master");
 		break;
 	}
 	system("pause");
