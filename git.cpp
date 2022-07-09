@@ -46,7 +46,7 @@ begin:
 	char status[] = "git status";
 	char buffin[50];
 	char commit[] = "git commit -m ";
-	char push[50] = "git push all ";
+	char push[50] = "git push test ";
 	char merge[50] = "git merge ";
 	char buff[50];
 	system("cls");
