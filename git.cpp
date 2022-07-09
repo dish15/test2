@@ -36,6 +36,7 @@ int main()
 {
 	SetConsoleOutputCP(1251);
 	SetConsoleCP(1251);
+	system("git add git.cpp");
 begin:
 	char add[50] = "git add ";
 	char branch[50] = "git checkout ";
@@ -44,7 +45,8 @@ begin:
 	char status[] = "git status";
 	char buffin[50];
 	char commit[] = "git commit -m ";
-	char push[50] = "git push test ";
+	char push[50] = "git push j ";
+	char merge[50] = "git merge ";
 	char buff[50];
 	system("cls");
 	menuout(0);
@@ -120,7 +122,11 @@ begin:
 		system("git branch -a");
 		break;
 	case 9:
-		system("git merge new_branch");
+		cout << "¬вед≥ть назву г≥лки:\n";
+		cin >> buffin;
+		strcpy_s(buff, merge);
+		strcat_s(buff, buffin);
+		system(buff);
 		break;
 	}
 
